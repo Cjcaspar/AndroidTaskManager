@@ -1,16 +1,29 @@
 package com.connercaspar.taskmanager;
 
+import android.content.Context;
+import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.constraint.ConstraintLayout;
+import android.support.v4.app.Fragment;
+import android.support.v4.content.ContextCompat;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.ViewParent;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.List;
 
+import butterknife.OnClick;
+
+import static com.connercaspar.taskmanager.MainActivity.TASK;
+
 public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 
+    private EditTaskFragment editTaskFragment;
     List<Task> taskList;
 
     public Adapter(List<Task> taskList) {
@@ -30,6 +43,8 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 
         holder.bind(position);
 
+
+
     }
 
     @Override
@@ -42,27 +57,50 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
         notifyDataSetChanged();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder {
+    public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
 
         private TextView taskTitle;
         private TextView dueDate;
+        private View root;
 
 
         public ViewHolder(View itemView) {
             super(itemView);
             taskTitle = itemView.findViewById(R.id.item_title);
             dueDate = itemView.findViewById(R.id.item_due_date);
+            //root = dueDate.getRootView();
         }
 
         public void bind(int position) {
             taskTitle.setText(taskList.get(position).getTitle());
             dueDate.setText(taskList.get(position).getDueDate());
+//            if (taskList.get(position).isPriority()) {
+//                root.setBackgroundColor(ContextCompat.getColor(root.getContext(), R.color.colorAccent));
+//            }
         }
 
-        //TODO: ONCLICK LISTENER FOR ITEMS
-        //@Override
-        //public void onClick(View v) {
-        //}
+
+
+
+        private void fragmentJump(Task task) {
+            AppCompatActivity activity = (AppCompatActivity) itemView.getContext();
+            editTaskFragment = new EditTaskFragment();
+            Bundle bundle = new Bundle();
+            bundle.putParcelable(TASK, task);
+            editTaskFragment.setArguments(bundle);
+
+            activity.getSupportFragmentManager().beginTransaction().replace(R.id.fragment_holder, editTaskFragment).addToBackStack(null).commit();
+
+
+        }
+
+        @Override
+        public void onClick(View v) {
+            fragmentJump(taskList.get(getAdapterPosition()));
+        }
+
+
     }
+
 
 }

@@ -57,8 +57,13 @@ public class AddTaskFragment extends Fragment {
                 dueDateInput.getText().toString().isEmpty() ||
                 priorityInput.getText().toString().isEmpty()) {
             Toast.makeText(getContext() , "All fields are required", Toast.LENGTH_SHORT).show();
+
+            //TODO ERROR HANDLING FOR INVALID INPUT
+        } else {
+            Task task = new Task(titleInput.getText().toString(), dueDateInput.getText().toString(), detailInput.getText().toString(), false, " ", true);
+            callback.addTask(task);
         }
-        callback.addTask(task); }
+    }
 
     public void attachParent (AddTaskCallback callback) {
         this.callback = callback;

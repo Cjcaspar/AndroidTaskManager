@@ -13,7 +13,7 @@ public interface TaskDao {
 
     //Allow us to get all video games
     @Query("SELECT * FROM task")
-    List<Task> getTaskss();
+    List<Task> getTasks();
 
     //Allows us to add a single game to the list
     @Insert

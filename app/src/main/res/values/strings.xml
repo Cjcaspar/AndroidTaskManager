@@ -5,4 +5,12 @@
     <string name="completed_tasks_textview">Completed Tasks:</string>
     <string name="title">Title</string>
     <string name="add_task">Add Task</string>
+    <string name="gettitle">%1$s</string>
+    <string name="details">Details</string>
+    <string name="due_date">Due Date</string>
+    <string name="priority">Priority</string>
+    <string name="edit_task_button_text">Edit This Task</string>
+    <string name="complete_task_button_text">Mark Task as Complete</string>
+    <string name="save_changes_button_text">Save_Changes</string>
+    <string name="cancel_changes_button">Cancel</string>
 </resources>

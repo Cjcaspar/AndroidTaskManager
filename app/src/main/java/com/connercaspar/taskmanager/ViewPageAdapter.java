@@ -15,7 +15,16 @@ public class ViewPageAdapter extends FragmentPagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-        return TabFragmentComplete.getInstance(position);
+        switch (position) {
+            case 0:
+                return TabFragmentIncomplete.getInstance(position);
+            case 1:
+                return TabFragmentComplete.getInstance(position);
+            case 2:
+                return TabFragmentAll.getInstance(position);
+            default:
+                return null;
+        }
     }
 
     @Override
@@ -30,6 +39,8 @@ public class ViewPageAdapter extends FragmentPagerAdapter {
                 return "Incomplete Tasks";
             case 1:
                 return "Completed Tasks";
+            case 2:
+                return "All Tasks";
             default:
                 return null;
         }

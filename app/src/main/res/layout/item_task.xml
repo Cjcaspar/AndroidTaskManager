@@ -11,6 +11,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/item_title"
         android:fontFamily="sans-serif"
+        android:textSize="24sp"
         app:layout_constraintTop_toTopOf="@id/item_row_layout"
         app:layout_constraintLeft_toLeftOf="@id/item_row_layout"
         app:layout_constraintBottom_toBottomOf="@id/item_row_layout"
