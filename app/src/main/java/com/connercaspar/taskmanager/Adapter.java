@@ -23,11 +23,13 @@ import static com.connercaspar.taskmanager.MainActivity.TASK;
 
 public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 
+    private final Callback callback;
     private EditTaskFragment editTaskFragment;
     List<Task> taskList;
 
-    public Adapter(List<Task> taskList) {
+    public Adapter(List<Task> taskList, Callback callback) {
         this.taskList = taskList;
+        this.callback = callback;
     }
 
     @NonNull
@@ -42,9 +44,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
 
         holder.bind(position);
-
-
-
+        holder.layout.setOnClickListener(holder.onItemClicked(taskList.get(position)));
     }
 
     @Override
@@ -57,17 +57,18 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
         notifyDataSetChanged();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
+    public class ViewHolder extends RecyclerView.ViewHolder {
 
         private TextView taskTitle;
         private TextView dueDate;
-        private View root;
+        private ConstraintLayout layout;
 
 
         public ViewHolder(View itemView) {
             super(itemView);
             taskTitle = itemView.findViewById(R.id.item_title);
             dueDate = itemView.findViewById(R.id.item_due_date);
+            layout = itemView.findViewById(R.id.item_row_layout);
             //root = dueDate.getRootView();
         }
 
@@ -83,24 +84,30 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 
 
         private void fragmentJump(Task task) {
-            AppCompatActivity activity = (AppCompatActivity) itemView.getContext();
-            editTaskFragment = new EditTaskFragment();
-            Bundle bundle = new Bundle();
-            bundle.putParcelable(TASK, task);
-            editTaskFragment.setArguments(bundle);
-
-            activity.getSupportFragmentManager().beginTransaction().replace(R.id.fragment_holder, editTaskFragment).addToBackStack(null).commit();
+//            AppCompatActivity activity = (AppCompatActivity) itemView.getContext();
+//            editTaskFragment = new EditTaskFragment();
+//            Bundle bundle = new Bundle();
+//            bundle.putParcelable(TASK, task);
+//            editTaskFragment.setArguments(bundle);
+//
+//            activity.getSupportFragmentManager().beginTransaction().replace(R.id.fragment_holder, editTaskFragment).addToBackStack(null).commit();
 
 
         }
 
-        @Override
-        public void onClick(View v) {
-            fragmentJump(taskList.get(getAdapterPosition()));
+
+        public View.OnClickListener onItemClicked(final Task task) {
+            return new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    callback.onTaskClicked(task);
+                }
+            };
         }
-
-
     }
 
+    interface Callback {
+        void onTaskClicked(Task task);
+    }
 
 }
