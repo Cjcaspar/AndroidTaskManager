@@ -10,36 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="88579d1d-64d8-4b9f-9851-88297e079844" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/connercaspar/taskmanager/EditTaskFragment.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/connercaspar/taskmanager/TabFragmentAll.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/connercaspar/taskmanager/TaskApplication.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_tab_all.xml" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/classAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/classAnalysis.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/javaCompile.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/javaCompile.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskHistory.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/connercaspar/taskmanager/Adapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/connercaspar/taskmanager/Adapter.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/connercaspar/taskmanager/AddTaskFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/connercaspar/taskmanager/AddTaskFragment.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/connercaspar/taskmanager/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/connercaspar/taskmanager/MainActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/connercaspar/taskmanager/TabFragmentComplete.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/connercaspar/taskmanager/TabFragmentComplete.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/connercaspar/taskmanager/TabFragmentIncomplete.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/connercaspar/taskmanager/TabFragmentIncomplete.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/connercaspar/taskmanager/Task.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/connercaspar/taskmanager/Task.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/connercaspar/taskmanager/TaskDao.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/connercaspar/taskmanager/TaskDao.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/connercaspar/taskmanager/TaskDatabase.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/connercaspar/taskmanager/TaskDatabase.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/connercaspar/taskmanager/ViewPageAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/connercaspar/taskmanager/ViewPageAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_add_task.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_add_task.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_tab_complete.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_tab_complete.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_tab_incomplete.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_tab_incomplete.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_task.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_task.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -85,11 +56,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Adapter.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Adapter.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/connercaspar/taskmanager/Adapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="447">
-              <caret line="101" column="0" lean-forward="false" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+            <state relative-caret-position="291">
+              <caret line="102" column="5" lean-forward="true" selection-start-line="102" selection-start-column="5" selection-end-line="102" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -146,7 +117,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fragment_edit_task.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="fragment_edit_task.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_edit_task.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
@@ -2470,11 +2441,18 @@
       <option name="presentableId" value="Default" />
       <updated>1526358458171</updated>
     </task>
+    <task id="LOCAL-00001" summary="completed recycler view adapter to correctly show in the tab view">
+      <created>1526421205569</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1526421205569</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="822" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -2485,9 +2463,9 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -2510,6 +2488,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="completed recycler view adapter to correctly show in the tab view" />
+    <option name="LAST_COMMIT_MESSAGE" value="completed recycler view adapter to correctly show in the tab view" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -2712,14 +2694,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/connercaspar/taskmanager/Adapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="101" column="0" lean-forward="false" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/connercaspar/taskmanager/DateConverter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -2737,6 +2711,14 @@
       </provider>
       <provider editor-type-id="android-designer2">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/connercaspar/taskmanager/Adapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="102" column="5" lean-forward="true" selection-start-line="102" selection-start-column="5" selection-end-line="102" selection-end-column="5" />
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>
