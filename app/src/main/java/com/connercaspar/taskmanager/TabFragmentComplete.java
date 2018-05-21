@@ -11,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,7 +20,9 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class TabFragmentComplete extends Fragment implements TaskDao{
+import static java.security.AccessController.getContext;
+
+public class TabFragmentComplete extends Fragment implements TaskDao, Adapter.Callback{
 
     @BindView(R.id.complete_recycler_view)
     protected RecyclerView recyclerViewComplete;
@@ -89,7 +92,7 @@ public class TabFragmentComplete extends Fragment implements TaskDao{
     private void setupList() {
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
 
-        completeAdapter = new Adapter(completedTasks);
+        completeAdapter = new Adapter(completedTasks, this);
         recyclerViewComplete.setAdapter(completeAdapter);
 
         recyclerViewComplete.setLayoutManager(linearLayoutManager);
@@ -138,4 +141,11 @@ public class TabFragmentComplete extends Fragment implements TaskDao{
     }
 
 
+    @Override
+    public void onTaskClicked(Task task) {
+        /** This gets your task back here. Possibly use another callback to chain this to the activity.
+         * You could also use an observable-based service that the activity was constantly observing that, whenever this changed,
+         * would cause it to react i.e. add the new fragment.*/
+        Toast.makeText(getContext(), task.getTitle(), Toast.LENGTH_SHORT).show();
+    }
 }
